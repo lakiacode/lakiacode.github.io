@@ -1,31 +1,95 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>All about me</title>
-    <link rel="stylesheet" href="style.css">
+<title>First Page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Courier New, Ingeborg, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #623;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 30%;
+    height: 300px; /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    float: left;
+    padding: 10px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+</style>
 </head>
-<h1>All about me</h1>
-
 <body>
-    <p>My name is lakia, and I from Indianapolis Indiana. I am 17 years old and I am currently a Catapult at Nextech. I am a
-        upcoming junior and will be going to Shortridge High School. Some fun facts about me would be I love to cook and
-        sing. When I was little I always spent the weekends at my grandmas house and each day she would teach me how to cook.
-        She had hundreds of cookbooks put up, I only read about six and I am planning on reading more. Another fun fact would
-        be singing, ever since i was 7 years old singing has always been my passion. When I was in the fouth grade I entered
-        A singning competition to sing the 'SSB' at the NFL, sadly I did not make it but that did not stop me from doing
-        what I love. Freshmen year is when I started my first Computer Science class. At first I had no intrest in the subject
-        but when two weeks went by I always had intrest ever since.
-    </P>
-    <P>
-        So I started to code and learn the basics of coding and coding lanuages such as html, css, javascript and more. One thing
-        that I struggled with at first is making sure that the code does not break and everything is in the right place.
-        During my sophmore year I had another Computer Science class, and I enjoyed it. Actually I met someone who was apart of the Catapult program last summer. We became good friends and had good laughs during that year. It was a group of three myself, her and another girl. Throughout the year we created so much. For example we created a live Triva app that surprised a lot of people from different companies. A liitle bit about we created is a app for all ages who would like to have fun during free time. The app has  three catagories to pick from, Movies, Sports and Food. The app has sound and points for when you get the answer right.
 
-    </p>
-</body>
+<header>
+  <h2>All about me</h2>
+</header>
 
-</html>
+<section>
+  <nav>
+    <ul>
+      <li><a href="My interests.html">  My Interests</a></li>
+      <li><a href="#">Facts</a></li>
+      <li><a href="#">Info</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>BIO</h1>
+    <p>My name is Lakia, and I from Indianapolis Indiana. I am 17 years old and I am currently a Catapult at Nextech. I am an upcoming junior and will be going to Shortridge High School. Some fun facts about me would be I love to cook and sing. When I was little I always spent the weekends at my grandma's house and each day she would teach me how to cook. She had hundreds of cookbooks put up, I only read about six and I am planning on reading more. Another fun fact would be singing, ever since I was 7 years old singing has always been my passion. When I was in the fourth grade I entered A singing competition to sing the 'SSB' at the NFL, sadly I did not make it but that did not stop me from doing what I love. Freshmen year is when I started my first Computer Science class. At first, I had no interest in the subject but when two weeks went by I always had interest ever since.
+</p>
+    <p>So I started to code and learn the basics of coding and coding lanuages such as html, css, javascript and more. One thing that I struggled with at first is making sure that the code does not break and everything is in the right place. During my sophmore year I had another Computer Science class, and I enjoyed it. Actually I met someone who was apart of the Catapult program last summer. We became good friends and had good laughs during that year. It was a group of three myself, her and another girl. Throughout the year we created so much. For example we created a live Triva app that surprised a lot of people from different companies. A liitle bit about we created is a app for all ages who would like to have fun during free time. The app has three catagories to pick from, Movies, Sports and Food. The app has sound and points for when you get the answer right.Say for instance you get a question right it will make a ding noise, but if you get it wrong it will make a error noise.</p>
+    <p>The types of music I listen to is R&B and Old School, I have a real connectioon with that type of music ever since I was a child. I am the fifith  oldest out of my family tree. After highschool I am planning on going to a trade school or college to major in some type of technolgy feild  culinary arts, or some type of art class because i have always wanted to learn how to draw.</p>
+  </article>
+</section>
+
+
